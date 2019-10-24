@@ -6,7 +6,7 @@
 #    By: kkraszew <kkraszew@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/17 13:56:16 by kkraszew          #+#    #+#              #
-#    Updated: 2019/10/24 12:15:41 by kkraszew         ###   ########.fr        #
+#    Updated: 2019/10/24 20:10:21 by kkraszew         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -80,7 +80,12 @@ SRCS	= ft_memset.c \
 			ft_swap_bits.c \
 			ft_reverse_bits.c \
 			ft_print_hex.c \
-			get_next_line.c
+			get_next_line.c \
+			ft_array_new.c \
+			ft_array_pop.c \
+			ft_array_print.c \
+			ft_array_max_value.c \
+			ft_array_copy.c
 
 OBJS	= $(SRCS:.c=.o)
 FLAGS	= -Wall -Wextra -Werror
@@ -89,13 +94,16 @@ INC		= ./includes
 all: $(NAME)
 	@echo ""
 
+norm:
+	@norminette $(SRCS)
+
 $(NAME): $(OBJS)
 	@ar rc $(NAME) $(OBJS)
 	@ranlib $(NAME)
 
 %.o: %.c
+	@echo "Libft: \033[0;32m" $< "\033[0m"
 	@gcc -c $< -o $@ $(FLAGS) -I$(INC)
-	@echo  ".\c)"
 
 clean:
 	@rm -f $(OBJS)
@@ -105,4 +113,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean re
+.PHONY: all norm clean fclean re
