@@ -1,3 +1,4 @@
 # libft
 
-Project for Hive Helsinki.
+Libc library created for Hive Helsinki
+Updated as needed
