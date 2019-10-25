@@ -6,7 +6,7 @@
 #    By: kkraszew <kkraszew@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/17 13:56:16 by kkraszew          #+#    #+#              #
-#    Updated: 2019/10/24 20:10:21 by kkraszew         ###   ########.fr        #
+#    Updated: 2019/10/25 11:17:57 by kkraszew         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -85,7 +85,9 @@ SRCS	= ft_memset.c \
 			ft_array_pop.c \
 			ft_array_print.c \
 			ft_array_max_value.c \
-			ft_array_copy.c
+			ft_array_copy.c \
+			ft_array_rotate_left.c \
+			ft_array_rotate_right.c
 
 OBJS	= $(SRCS:.c=.o)
 FLAGS	= -Wall -Wextra -Werror

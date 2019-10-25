@@ -6,7 +6,7 @@
 /*   By: kkraszew <kkraszew@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/15 14:12:00 by kkraszew          #+#    #+#             */
-/*   Updated: 2019/10/24 20:11:04 by kkraszew         ###   ########.fr       */
+/*   Updated: 2019/10/25 11:19:27 by kkraszew         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,5 +107,7 @@ void				ft_array_print(int *arr, size_t size, char *encl);
 int					ft_array_max_value(int *arr, int length);
 int					*ft_array_copy(const int *src, int *dst,
 									size_t n_src, size_t n_dst);
+int					*ft_array_rotate_left(int *arr, size_t size, unsigned int tms);
+int					*ft_array_rotate_right(int *arr, size_t size, unsigned int tms);
 
 #endif
