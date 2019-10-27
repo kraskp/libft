@@ -1,4 +1,3 @@
-
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -7,7 +6,7 @@
 /*   By: kkraszew <kkraszew@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/15 14:12:00 by kkraszew          #+#    #+#             */
-/*   Updated: 2019/10/26 19:47:45 by kkraszew         ###   ########.fr       */
+/*   Updated: 2019/10/27 13:40:47 by kkraszew         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,7 +87,7 @@ void				ft_putnbr_fd(int n, int fd);
 t_list				*ft_lstnew(void const *content, size_t content_size);
 void				ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
-void				ft_lstadd(t_list **alst, t_list *new);
+void				ft_lstaddfront(t_list **alst, t_list *new);
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 void				ft_lstaddnext(t_list *lst, t_list *elm);
@@ -108,7 +107,9 @@ void				ft_array_print(int *arr, size_t size, char *encl);
 int					ft_array_max_value(int *arr, int length);
 int					*ft_array_copy(const int *src, int *dst,
 									size_t n_src, size_t n_dst);
-int					*ft_array_rotate_left(int *arr, size_t size, unsigned int tms);
-int					*ft_array_rotate_right(int *arr, size_t size, unsigned int tms);
+int					*ft_array_rotate_left(int *arr, size_t size,
+											unsigned int tms);
+int					*ft_array_rotate_right(int *arr, size_t size,
+											unsigned int tms);
 
 #endif

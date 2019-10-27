@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd.c                                        :+:      :+:    :+:   */
+/*   ft_lstaddfront.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kkraszew <kkraszew@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/18 12:44:23 by kkraszew          #+#    #+#             */
-/*   Updated: 2019/10/18 15:57:10 by kkraszew         ###   ########.fr       */
+/*   Created: 2019/10/27 13:38:53 by kkraszew          #+#    #+#             */
+/*   Updated: 2019/10/27 13:39:08 by kkraszew         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd(t_list **alst, t_list *new)
+void	ft_lstaddfront(t_list **alst, t_list *new)
 {
 	if (alst && new)
 	{
