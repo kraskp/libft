@@ -6,7 +6,7 @@
 #    By: kkraszew <kkraszew@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/17 13:56:16 by kkraszew          #+#    #+#              #
-#    Updated: 2019/10/27 13:51:37 by kkraszew         ###   ########.fr        #
+#    Updated: 2019/10/27 15:13:18 by kkraszew         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -72,12 +72,13 @@ SRCS	= ft_memset.c \
 			ft_lstaddend.c \
 			ft_lstpush.c \
 			ft_lstdel.c \
+			ft_lstprint.c \
+			ft_lstaddnext.c \
 			ft_isupper.c \
 			ft_islower.c \
 			ft_iswspace.c \
 			ft_xint.c \
 			ft_isblank.c \
-			ft_lstaddnext.c \
 			ft_print_bits.c \
 			ft_swap_bits.c \
 			ft_reverse_bits.c \

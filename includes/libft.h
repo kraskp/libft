@@ -6,7 +6,7 @@
 /*   By: kkraszew <kkraszew@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/15 14:12:00 by kkraszew          #+#    #+#             */
-/*   Updated: 2019/10/27 13:51:22 by kkraszew         ###   ########.fr       */
+/*   Updated: 2019/10/27 15:12:33 by kkraszew         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,6 +93,7 @@ void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstpush(t_list *first, void *item);
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 void				ft_lstaddnext(t_list *lst, t_list *elm);
+void				ft_lstprint(t_list *alst);
 int					ft_islower(int c);
 int					ft_isupper(int c);
 int					ft_iswspace(int c);
