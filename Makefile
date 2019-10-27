@@ -6,7 +6,7 @@
 #    By: kkraszew <kkraszew@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/17 13:56:16 by kkraszew          #+#    #+#              #
-#    Updated: 2019/10/27 13:39:18 by kkraszew         ###   ########.fr        #
+#    Updated: 2019/10/27 13:51:37 by kkraszew         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -69,6 +69,8 @@ SRCS	= ft_memset.c \
 			ft_lstiter.c \
 			ft_lstmap.c \
 			ft_lstaddfront.c \
+			ft_lstaddend.c \
+			ft_lstpush.c \
 			ft_lstdel.c \
 			ft_isupper.c \
 			ft_islower.c \
