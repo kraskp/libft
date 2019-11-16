@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   ft_get_next_line.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kkraszew <kkraszew@student.hive.fi>        +#+  +:+       +#+        */
+/*   By: kkraszew <kkraszew@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/21 18:57:22 by kkraszew          #+#    #+#             */
-/*   Updated: 2019/10/27 13:41:23 by kkraszew         ###   ########.fr       */
+/*   Created: 2019/11/11 17:26:15 by kkraszew          #+#    #+#             */
+/*   Updated: 2019/11/11 17:26:28 by kkraszew         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ char	*get_line(char **content)
 	return (line);
 }
 
-int		get_next_line(int fd, char **line)
+int		ft_get_next_line(int fd, char **line)
 {
 	char			buf[BUFF_SIZE + 1];
 	size_t			ret;

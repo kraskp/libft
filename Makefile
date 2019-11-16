@@ -1,14 +1,14 @@
-#******************************************************************************#
+# **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: kkraszew <kkraszew@student.hive.fi>        +#+  +:+       +#+         #
+#    By: kkraszew <kkraszew@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/17 13:56:16 by kkraszew          #+#    #+#              #
-#    Updated: 2019/10/27 15:13:18 by kkraszew         ###   ########.fr        #
+#    Updated: 2019/11/16 17:10:40 by kkraszew         ###   ########.fr        #
 #                                                                              #
-#******************************************************************************#
+# **************************************************************************** #
 
 NAME	= libft.a
 SRCS	= ft_memset.c \
@@ -83,14 +83,23 @@ SRCS	= ft_memset.c \
 			ft_swap_bits.c \
 			ft_reverse_bits.c \
 			ft_print_hex.c \
-			get_next_line.c \
+			ft_get_next_line.c \
 			ft_array_new.c \
 			ft_array_pop.c \
 			ft_array_print.c \
 			ft_array_max_value.c \
 			ft_array_copy.c \
 			ft_array_rotate_left.c \
-			ft_array_rotate_right.c
+			ft_array_rotate_right.c \
+			ft_widelen.c \
+			ft_itoa_base.c \
+			ft_puthex.c \
+			ft_putull.c \
+			ft_putoct.c \
+			ft_putunbr.c \
+			ft_putadr.c \
+			ft_putlong.c \
+			ft_sqrt.c
 
 OBJS	= $(SRCS:.c=.o)
 FLAGS	= -Wall -Wextra -Werror
