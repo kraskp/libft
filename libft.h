@@ -6,7 +6,7 @@
 /*   By: kkraszew <kkraszew@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/15 14:12:00 by kkraszew          #+#    #+#             */
-/*   Updated: 2019/11/16 17:10:47 by kkraszew         ###   ########.fr       */
+/*   Updated: 2019/11/16 18:17:17 by kkraszew         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -119,6 +119,8 @@ void				ft_putoct(unsigned int n, int *p);
 void				ft_putunbr(unsigned int n, int *p);
 void				ft_putadr(unsigned long n, int *p);
 void				ft_putlong(long n, int *p);
+void				ft_putwstrf(wchar_t *s, int *p);
+void				ft_putstrf(char const *s, int *p);
 size_t				ft_strlcat(char *dst, const char *src, size_t dstsize);
 t_list				*ft_lstnew(void const *content, size_t content_size);
 t_list				*ft_lstpush(t_list *first, void *item);
