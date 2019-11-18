@@ -6,7 +6,7 @@
 /*   By: kkraszew <kkraszew@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/15 14:12:00 by kkraszew          #+#    #+#             */
-/*   Updated: 2019/11/18 18:59:11 by kkraszew         ###   ########.fr       */
+/*   Updated: 2019/11/18 19:30:14 by kkraszew         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -129,10 +129,14 @@ void				ft_putnbrf(int n, int *p);
 size_t				ft_strlcat(char *dst, const char *src, size_t dstsize);
 size_t				ft_numlen(int n);
 size_t				ft_numulen(unsigned int n);
+size_t				ft_ustrlen(const unsigned char *s);
+size_t				ft_ustrnlen(const unsigned char *s, size_t max);
 t_list				*ft_lstnew(void const *content, size_t content_size);
 t_list				*ft_lstpush(t_list *first, void *item);
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 unsigned char		ft_swap_bits(unsigned char octet);
 unsigned char		ft_reverse_bits(unsigned char octet);
+unsigned char		*ft_strudup(char *s1);
+unsigned char		*ft_ustrdup(unsigned char *s1);
 
 #endif
