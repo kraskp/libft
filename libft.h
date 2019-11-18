@@ -6,7 +6,7 @@
 /*   By: kkraszew <kkraszew@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/15 14:12:00 by kkraszew          #+#    #+#             */
-/*   Updated: 2019/11/18 19:30:14 by kkraszew         ###   ########.fr       */
+/*   Updated: 2019/11/18 20:12:08 by kkraszew         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <string.h>
+# include <wchar.h>
+# include <stddef.h>
 # define BUFF_SIZE 8
 
 # define ABS(a)				(a < 0 ? -a : a)
@@ -138,5 +140,10 @@ unsigned char		ft_swap_bits(unsigned char octet);
 unsigned char		ft_reverse_bits(unsigned char octet);
 unsigned char		*ft_strudup(char *s1);
 unsigned char		*ft_ustrdup(unsigned char *s1);
+int					len_wchar_single(wchar_t c);
+int					len_wchar(wchar_t *wstr);
+int					nlen_wchar(wchar_t *wstr, size_t len);
+void				convert_wchar(unsigned char **new, wchar_t wc, size_t *i);
+size_t				len_wuchart(unsigned char *str);
 
 #endif
