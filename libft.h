@@ -6,7 +6,7 @@
 /*   By: kkraszew <kkraszew@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/15 14:12:00 by kkraszew          #+#    #+#             */
-/*   Updated: 2019/11/16 18:17:17 by kkraszew         ###   ########.fr       */
+/*   Updated: 2019/11/18 18:59:11 by kkraszew         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,10 @@
 # include <stdlib.h>
 # include <string.h>
 # define BUFF_SIZE 8
+
+# define ABS(a)				(a < 0 ? -a : a)
+# define MAX(a, b)			(a < b ? b : a)
+# define MIN(a, b)			(a < b ? a : b)
 
 typedef	struct		s_list
 {
@@ -121,7 +125,10 @@ void				ft_putadr(unsigned long n, int *p);
 void				ft_putlong(long n, int *p);
 void				ft_putwstrf(wchar_t *s, int *p);
 void				ft_putstrf(char const *s, int *p);
+void				ft_putnbrf(int n, int *p);
 size_t				ft_strlcat(char *dst, const char *src, size_t dstsize);
+size_t				ft_numlen(int n);
+size_t				ft_numulen(unsigned int n);
 t_list				*ft_lstnew(void const *content, size_t content_size);
 t_list				*ft_lstpush(t_list *first, void *item);
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));

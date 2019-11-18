@@ -6,7 +6,7 @@
 #    By: kkraszew <kkraszew@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/17 13:56:16 by kkraszew          #+#    #+#              #
-#    Updated: 2019/11/16 18:17:28 by kkraszew         ###   ########.fr        #
+#    Updated: 2019/11/16 18:53:40 by kkraszew         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -101,7 +101,10 @@ SRCS	= ft_memset.c \
 			ft_putlong.c \
 			ft_sqrt.c \
 			ft_putwstrf.c \
-			ft_putstrf.c
+			ft_putstrf.c \
+			ft_numlen.c \
+			ft_numulen.c \
+			ft_putnbrf.c
 
 OBJS	= $(SRCS:.c=.o)
 FLAGS	= -Wall -Wextra -Werror
