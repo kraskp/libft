@@ -6,7 +6,7 @@
 /*   By: kkraszew <kkraszew@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/15 14:12:00 by kkraszew          #+#    #+#             */
-/*   Updated: 2019/11/26 19:30:24 by kkraszew         ###   ########.fr       */
+/*   Updated: 2019/11/26 19:40:48 by kkraszew         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -130,6 +130,7 @@ size_t				ft_numlen(int n);
 size_t				ft_numulen(unsigned int n);
 size_t				ft_ustrlen(const unsigned char *s);
 size_t				ft_ustrnlen(const unsigned char *s, size_t max);
+size_t				ft_abs(int n);
 t_list				*ft_lstnew(void const *content, size_t content_size);
 t_list				*ft_lstpush(t_list *first, void *item);
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
