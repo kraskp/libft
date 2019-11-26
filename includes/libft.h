@@ -6,7 +6,7 @@
 /*   By: kkraszew <kkraszew@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/15 14:12:00 by kkraszew          #+#    #+#             */
-/*   Updated: 2019/11/26 19:17:19 by kkraszew         ###   ########.fr       */
+/*   Updated: 2019/11/26 19:30:24 by kkraszew         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,6 +63,7 @@ int					*ft_array_rotate_left(int *arr, size_t size,
 											unsigned int tms);
 int					*ft_array_rotate_right(int *arr, size_t size,
 											unsigned int tms);
+int					ft_max(int x, int y);
 int					ft_widelen(wchar_t arg);
 char				*ft_strdup(const char *s1);
 char				*ft_strcpy(char *dst, const char *src);
@@ -144,6 +145,5 @@ size_t				len_wuchart(unsigned char *str);
 int					ft_maxlen_tab(char **tab, int index);
 void				ft_printtab_fd(char **tab, int fd);
 void				ft_printtab(char **tab);
-
 
 #endif
