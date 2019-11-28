@@ -6,12 +6,17 @@
 #    By: kkraszew <kkraszew@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/17 13:56:16 by kkraszew          #+#    #+#              #
-#    Updated: 2019/11/26 19:40:29 by kkraszew         ###   ########.fr        #
+#    Updated: 2019/11/28 19:38:55 by kkraszew         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	= libft.a
-SRCS	= ft_memset.c \
+NAME = libft.a
+
+INC = -I ./includes/
+
+FLAGS = -Wall -Wextra -Werror
+
+SRCS_NAME	= ft_memset.c \
 			ft_bzero.c \
 			ft_memcpy.c \
 			ft_memccpy.c \
@@ -112,32 +117,45 @@ SRCS	= ft_memset.c \
 			ft_countwchar.c \
 			ft_printtab.c \
 			ft_max.c \
-			ft_abs.c
+			ft_abs.c \
+			ft_printf.c \
+			pf_conv_int.c \
+			pf_conv_char.c \
+			pf_conv_double.c \
+			pf_conv_string.c \
+			pf_conv_other.c \
+			pf_lst_init.c \
+			pf_lst_putdouble.c \
+			pf_lst_putoption.c \
+			pf_buff_man.c \
+			pf_utils.c \
+			pf_put_string.c \
+			pf_put_color.c
 
-OBJS	= $(SRCS:.c=.o)
-FLAGS	= -Wall -Wextra -Werror
-INC		= ./includes
+SRCS_PATH = srcs/
+OBJ_PATH  = obj/
 
-all: $(NAME)
-	@echo ""
+SRCS = $(addprefix $(SRCS_PATH), $(SRCS_NAME))
+OBJ = $(addprefix $(OBJ_PATH), $(SRCS_NAME:.c=.o))
 
-norm:
-	@norminette $(SRCS)
-
-$(NAME): $(OBJS)
-	@ar rc $(NAME) $(OBJS)
+$(NAME): $(OBJ)
+	@ar rc $(NAME) $(OBJ)
 	@ranlib $(NAME)
+	@echo "\033[32mBinary \033[1;32m$(NAME)\033[1;0m\033[32m created.\033[0m"
 
-%.o: %.c
-	@echo "Libft: \033[0;32m" $< "\033[0m"
-	@gcc -c $< -o $@ $(FLAGS) -I$(INC)
+$(OBJ_PATH)%.o: $(SRCS_PATH)%.c
+	@mkdir -p obj
+	@gcc -c $(FLAGS) $(INC) $< -o $@
+	@echo "\033[34m\033[1mCompiling \033[0m\033[36m$(notdir $<)\033[1m\033[34m done.\033[0m"
 
 clean:
-	@rm -f $(OBJS)
+	@/bin/rm -rf $(OBJ_PATH)
+	@echo "\033[31mObjects files \033[1;31m$(OBJS_LIST)\033[1;0m\033[31m removed.\033[0m"
 
 fclean: clean
-	@rm -f $(NAME)
+	@/bin/rm -rf $(NAME)
+	@echo "\033[31mBin \033[1;31m$(NAME)\033[1;0m\033[31m removed.\033[0m"
 
 re: fclean all
 
-.PHONY: all norm clean fclean re
+.PHONY: all, clean, fclean, re
