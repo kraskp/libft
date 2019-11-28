@@ -6,7 +6,7 @@
 #    By: kkraszew <kkraszew@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/17 13:56:16 by kkraszew          #+#    #+#              #
-#    Updated: 2019/11/28 19:38:55 by kkraszew         ###   ########.fr        #
+#    Updated: 2019/11/28 20:01:15 by kkraszew         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -141,20 +141,20 @@ OBJ = $(addprefix $(OBJ_PATH), $(SRCS_NAME:.c=.o))
 $(NAME): $(OBJ)
 	@ar rc $(NAME) $(OBJ)
 	@ranlib $(NAME)
-	@echo "\033[32mBinary \033[1;32m$(NAME)\033[1;0m\033[32m created.\033[0m"
+	@echo "\033[32mBinary \033[1;32m$(NAME)\033[1;0m\033[32m created!\033[0m"
 
 $(OBJ_PATH)%.o: $(SRCS_PATH)%.c
 	@mkdir -p obj
 	@gcc -c $(FLAGS) $(INC) $< -o $@
-	@echo "\033[34m\033[1mCompiling \033[0m\033[36m$(notdir $<)\033[1m\033[34m done.\033[0m"
+	@echo "\033[0;34m\033[1mCompiling \033[1m\033[36m$(notdir $<)\033[1m\033[34m done.\033[0m"
 
 clean:
 	@/bin/rm -rf $(OBJ_PATH)
-	@echo "\033[31mObjects files \033[1;31m$(OBJS_LIST)\033[1;0m\033[31m removed.\033[0m"
+	@echo "\033[31mObject files\033[1;31m$(OBJS_LIST)\033[1;0m\033[31m removed.\033[0m"
 
 fclean: clean
 	@/bin/rm -rf $(NAME)
-	@echo "\033[31mBin \033[1;31m$(NAME)\033[1;0m\033[31m removed.\033[0m"
+	@echo "\033[31mBinary \033[1;31m$(NAME)\033[1;0m\033[31m removed.\033[0m"
 
 re: fclean all
 
