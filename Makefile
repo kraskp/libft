@@ -6,7 +6,7 @@
 #    By: kkraszew <kkraszew@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/17 13:56:16 by kkraszew          #+#    #+#              #
-#    Updated: 2019/11/28 20:01:15 by kkraszew         ###   ########.fr        #
+#    Updated: 2019/12/01 14:31:50 by kkraszew         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -109,6 +109,7 @@ SRCS_NAME	= ft_memset.c \
 			ft_putstrf.c \
 			ft_numlen.c \
 			ft_numulen.c \
+			ft_numullen.c \
 			ft_putnbrf.c \
 			ft_ustrlen.c \
 			ft_ustrnlen.c \

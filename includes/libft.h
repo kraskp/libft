@@ -6,7 +6,7 @@
 /*   By: kkraszew <kkraszew@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/15 14:12:00 by kkraszew          #+#    #+#             */
-/*   Updated: 2019/11/26 19:40:48 by kkraszew         ###   ########.fr       */
+/*   Updated: 2019/12/01 14:31:20 by kkraszew         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -146,5 +146,6 @@ size_t				len_wuchart(unsigned char *str);
 int					ft_maxlen_tab(char **tab, int index);
 void				ft_printtab_fd(char **tab, int fd);
 void				ft_printtab(char **tab);
+unsigned long long	ft_numullen(unsigned long long n);
 
 #endif
