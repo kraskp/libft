@@ -6,7 +6,7 @@
 #    By: kkraszew <kkraszew@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/17 13:56:16 by kkraszew          #+#    #+#              #
-#    Updated: 2019/12/03 17:37:20 by kkraszew         ###   ########.fr        #
+#    Updated: 2019/12/03 18:31:26 by kkraszew         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -122,6 +122,7 @@ SRCS_NAME	= ft_memset.c \
 			ft_putstr_free.c \
 			ft_putnchar.c \
 			ft_printf.c \
+			ft_strchr_index.c \
 			pf_conv_int.c \
 			pf_conv_char.c \
 			pf_conv_double.c \

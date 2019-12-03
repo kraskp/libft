@@ -6,7 +6,7 @@
 /*   By: kkraszew <kkraszew@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/15 14:12:00 by kkraszew          #+#    #+#             */
-/*   Updated: 2019/12/03 17:36:36 by kkraszew         ###   ########.fr       */
+/*   Updated: 2019/12/03 18:31:04 by kkraszew         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,6 +65,7 @@ int					*ft_array_rotate_right(int *arr, size_t size,
 											unsigned int tms);
 int					ft_max(int x, int y);
 int					ft_widelen(wchar_t arg);
+int					ft_strchr_index(char *s, int c);
 char				*ft_strdup(const char *s1);
 char				*ft_strcpy(char *dst, const char *src);
 char				*ft_strncpy(char *dst, const char *src, size_t len);
